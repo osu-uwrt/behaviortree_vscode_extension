@@ -1,0 +1,90 @@
+.tree_node h1 {
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tree_node {
+    margin: 0px;
+    padding: 0px;
+    display: table;
+    z-index: -2;
+}
+
+.inner_body {
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.25);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 128, 128);
+    user-select: none;
+    z-index: -1;
+}
+
+.selected {
+    border-color: red;
+}
+
+.inner_body:hover {
+    /* border-color: rgb(200, 200, 200); */
+    -webkit-filter: brightness(75%);
+    filter:brightness(75%);
+}
+
+.inner_body:active {
+    border-color: rgb(128, 50, 50);
+}
+
+.port {
+    direction: rtl;
+}
+
+.node_input {
+    background-color: transparent;
+    color: currentColor;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(128, 128, 128);
+}
+
+.without_border {
+    border: none;
+}
+
+.extra_bottom_margin {
+    margin-bottom: 4px;
+}
+
+.top_connection {
+    position: relative;
+    top: 7px;
+}
+
+/* this rule is meant to be used on the bottom-most element of the node.
+   the rule moves the dot lower onto the border */
+.bottom_connection {
+    position: relative;
+    top: -7px;
+}
+
+.bottom_connection:hover {
+    background-color: rgb(255, 50, 50);
+    border-width: 3px;
+}
+
+.justified_center {
+    margin: auto;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 128, 128);
+    background-color: rgb(128, 128, 128);
+    user-select: none;
+    -webkit-user-drag: none;
+}
